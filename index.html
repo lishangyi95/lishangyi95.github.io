@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精选文章</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 三列布局 */
+            gap: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .category {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .category h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .sub-category {
+            margin: 10px 0;
+            background-color: #efefef;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .sub-category h3 {
+            margin: 0;
+            color: #555;
+        }
+        .item, .jinvnuequanjia {
+            margin: 5px 0;
+        }
+        .item a, .jinvnuequanjia a {
+            text-decoration: none; /* 移除下划线 */
+            color: #4682B4; /* 统一为钢蓝色 */
+        }
+        .item a:hover, .jinvnuequanjia a:hover {
+            color: #2F4F4F; /* 悬停时变为更深的颜色 */
+        }
+        /* 覆盖浏览器默认的已访问链接样式 */
+        .item a:visited, .jinvnuequanjia a:visited {
+            color: #4682B4; /* 确保已访问链接颜色一致 */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 类型1 -->
+    <div class="category">
+        <h2>1</h2>
+        
+        <!-- 次级类型1 -->
+        <div class="sub-category">
+            <h3>1</h3>
+            <div class="item"><a href="">1</a></div>
+            <div class="item"><a href="">2</a></div>
+            <div class="item"><a href="">3</a></div>
+        </div>
+
+       <!-- 次级类型2 -->
+        <div class="sub-category">
+            <h3>2</h3>
+            <div class="item"><a href="">1</a></div>
+            <div class="item"><a href="">2</a></div>
+            <div class="item"><a href="">3</a></div>
+        </div>
+        
+        <!-- 次级类型3 -->
+        <div class="sub-category">
+            <h3>3</h3>
+            <div class="item"><a href="">1</a></div>
+            <div class="item"><a href="">2</a></div>
+        </div>
+    </div>
+
+</body>
+</html>
